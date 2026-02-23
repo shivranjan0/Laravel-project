@@ -1,0 +1,5 @@
+/* Default Vite styles removed to prevent conflict with project styles */
+body {
+  margin: 0;
+  padding: 0;
+}
