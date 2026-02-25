@@ -1,94 +1,115 @@
+import { useState } from "react";
+import Link from "next/link";
+import ServiceFeatures from "./ServiceFeatures";
+import { ArrowUpRight } from "iconoir-react";
 
 const Footer = () => {
+    const [activeSection, setActiveSection] = useState(null);
+
+    const toggleSection = (section) => {
+        setActiveSection((prev) => (prev === section ? null : section));
+    };
+
     return (
         <footer className="tf-footer footer-s5 bg-white">
+            <ServiceFeatures />
             <div className="position-relative">
                 <div className="br-line fake-class top-0"></div>
                 <div className="br-line fake-class bottom-0 d-none d-sm-flex"></div>
                 <div className="container-full">
                     <div className="footer-inner flat-spacing">
                         <div className="col-left">
-                            <div className="footer-col-block footer-wrap-start">
-                                <p className="footer-heading footer-heading-mobile ">OUR STORE</p>
+                            <div className={`footer-col-block footer-wrap-start ${activeSection === "our-store" ? "open" : ""}`}>
+                                <p className="footer-heading footer-heading-mobile" onClick={() => toggleSection("our-store")}>OUR STORE</p>
                                 <div className="tf-collapse-content">
-                                    <p className="cl-text-2 mb-4">
-                                        24/7 Support Center:
-                                    </p>
-                                    <a href="tel:0112348888" className=" link h4 fw-medium mb-12">
-                                        (+01) 1234 8888
-                                    </a>
-                                    <a href="https://www.google.com/maps?q=600+N+Michigan+Ave+Chicago,+IL+60611+USA"
-                                        target="_blank" rel="noopener noreferrer" className="cl-text-2 link mb-4">
-                                        600 N Michigan Ave, Chicago, IL 60611, USA
-                                    </a>
-                                    <a href="mailto:hi.amere@gmail.com" className="cl-text-2 link">
-                                        hi.amere@gmail.com
-                                    </a>
+                                    <div>
+                                        <p className="cl-text-2 mb-4">
+                                            24/7 Support Center:
+                                        </p>
+                                        <a href="tel:0112348888" className="link h4 fw-medium mb-12 d-block">
+                                            (+01) 1234 8888
+                                        </a>
+                                        <a href="https://www.google.com/maps?q=600+N+Michigan+Ave+Chicago,+IL+60611+USA"
+                                            target="_blank" rel="noopener noreferrer" className="cl-text-2 link mb-4 d-block">
+                                            600 N Michigan Ave, Chicago, IL 60611, USA
+                                        </a>
+                                        <a href="mailto:hi.amere@gmail.com" className="cl-text-2 link">
+                                            hi.amere@gmail.com
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div className="br-line type-vertical cl-nor"></div>
                         <div className="col-center">
                             <div className="footer-link-list">
-                                <div className="footer-col-block footer-wrap-2">
-                                    <p className="footer-heading footer-heading-mobile ">COMPANY</p>
+                                <div className={`footer-col-block footer-wrap-2 ${activeSection === "company" ? "open" : ""}`}>
+                                    <p className="footer-heading footer-heading-mobile" onClick={() => toggleSection("company")}>COMPANY</p>
                                     <div className="tf-collapse-content">
-                                        <ul className="footer-menu-list">
-                                            <li><a href="about.html" className="cl-text-2 link">About Us</a></li>
-                                            <li><a href="our-store.html" className="cl-text-2 link">Our Stories</a></li>
-                                            <li><a href="contact.html" className="cl-text-2 link">Contact us</a></li>
-                                            <li><a href="blog.html" className="cl-text-2 link">Latest New</a></li>
-                                            <li><a href="account-page.html" className="cl-text-2 link">My Account</a></li>
-                                        </ul>
+                                        <div>
+                                            <ul className="footer-menu-list">
+                                                <li><Link href="/about" className="cl-text-2 link">About Us</Link></li>
+                                                <li><Link href="/blog" className="cl-text-2 link">Our Stories</Link></li>
+                                                <li><Link href="/contact" className="cl-text-2 link">Contact us</Link></li>
+                                                <li><Link href="/blog" className="cl-text-2 link">Latest New</Link></li>
+                                                <li><Link href="/my-account" className="cl-text-2 link">My Account</Link></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="footer-col-block footer-wrap-3">
-                                    <p className="footer-heading footer-heading-mobile ">CUSTOMER</p>
+                                <div className={`footer-col-block footer-wrap-3 ${activeSection === "customer" ? "open" : ""}`}>
+                                    <p className="footer-heading footer-heading-mobile" onClick={() => toggleSection("customer")}>CUSTOMER</p>
                                     <div className="tf-collapse-content">
-                                        <ul className="footer-menu-list">
-                                            <li><a href="shipping.html" className="cl-text-2 link">Shipping</a></li>
-                                            <li><a href="return-and-refund.html" className="cl-text-2 link">Return & Refund</a></li>
-                                            <li><a href="privacy-policy.html" className="cl-text-2 link">Privacy Policy</a></li>
-                                            <li><a href="term-and-condition.html" className="cl-text-2 link">Terms & Conditions</a></li>
-                                            <li><a href="faq.html" className="cl-text-2 link">Orders FAQs</a></li>
-                                        </ul>
+                                        <div>
+                                            <ul className="footer-menu-list">
+                                                <li><Link href="#" className="cl-text-2 link">Shipping</Link></li>
+                                                <li><Link href="#" className="cl-text-2 link">Return & Refund</Link></li>
+                                                <li><Link href="#" className="cl-text-2 link">Privacy Policy</Link></li>
+                                                <li><Link href="#" className="cl-text-2 link">Terms & Conditions</Link></li>
+                                                <li><Link href="#" className="cl-text-2 link">Orders FAQs</Link></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="footer-col-block footer-wrap-4">
-                                    <p className="footer-heading footer-heading-mobile ">MY ACCOUNT</p>
+                                <div className={`footer-col-block footer-wrap-4 ${activeSection === "my-account" ? "open" : ""}`}>
+                                    <p className="footer-heading footer-heading-mobile" onClick={() => toggleSection("my-account")}>MY ACCOUNT</p>
                                     <div className="tf-collapse-content">
-                                        <ul className="footer-menu-list">
-                                            <li><a href="login.html" className="cl-text-2 link">Login</a></li>
-                                            <li><a href="register.html" className="cl-text-2 link">Sign up</a></li>
-                                            <li><a href="account-page.html" className="cl-text-2 link">My Account</a></li>
-                                            <li><a href="wishlist.html" className="cl-text-2 link">Wish List</a></li>
-                                        </ul>
+                                        <div>
+                                            <ul className="footer-menu-list">
+                                                <li><Link href="/login" className="cl-text-2 link">Login</Link></li>
+                                                <li><Link href="/signup" className="cl-text-2 link">Sign up</Link></li>
+                                                <li><Link href="/my-account" className="cl-text-2 link">My Account</Link></li>
+                                                <li><Link href="/wishlist" className="cl-text-2 link">Wish List</Link></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="br-line type-vertical cl-nor"></div>
                         <div className="col-right">
-                            <div className="footer-col-block footer-wrap-end">
-                                <p className="footer-heading footer-heading-mobile ">NEWSLETTER</p>
+                            <div className={`footer-col-block footer-wrap-end ${activeSection === "newsletter" ? "open" : ""}`}>
+                                <p className="footer-heading footer-heading-mobile" onClick={() => toggleSection("newsletter")}>NEWSLETTER</p>
                                 <div className="tf-collapse-content">
-                                    <p className="footer-desc cl-text-2 mb-16">
-                                        Subscribe for store updates and discounts.
-                                    </p>
-                                    <form className="form-sub mb-16" onSubmit={(e) => e.preventDefault()}>
-                                        <fieldset>
-                                            <input type="email" placeholder="Enter your e-mail" required />
-                                        </fieldset>
-                                        <button type="submit" className="btn-action">
-                                            <i className="icon icon-ArrowUpRight"></i>
-                                        </button>
-                                    </form>
-                                    <p className="text-remember cl-text-2">
-                                        By clicking subcribe, you agree to the
-                                        <a href="term-and-condition.html" className=" link link-underline"> Terms of Service </a>
-                                        and
-                                        <a href="privacy-policy.html" className=" link link-underline"> Privacy Policy</a>.
-                                    </p>
+                                    <div>
+                                        <p className="footer-desc cl-text-2 mb-16">
+                                            Subscribe for store updates and discounts.
+                                        </p>
+                                        <form className="form-sub mb-16" onSubmit={(e) => e.preventDefault()}>
+                                            <fieldset>
+                                                <input type="email" placeholder="Enter your e-mail" required />
+                                            </fieldset>
+                                            <button type="submit" className="btn-action">
+                                                <ArrowUpRight height={20} width={20} />
+                                            </button>
+                                        </form>
+                                        <p className="text-remember cl-text-2">
+                                            By clicking subcribe, you agree to the
+                                            <Link href="#" className="link link-underline"> Terms of Service </Link>
+                                            and
+                                            <Link href="#" className="link link-underline"> Privacy Policy</Link>.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

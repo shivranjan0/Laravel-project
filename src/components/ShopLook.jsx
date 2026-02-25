@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Controller, EffectFade, Navigation } from 'swiper/modules';
+import { ShoppingBag, NavArrowLeft, NavArrowRight } from "iconoir-react";
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
@@ -80,7 +81,7 @@ const ShopLook = () => {
                                 </div>
                                 <div className="mini-action">
                                     <a href="#shoppingCart" data-bs-toggle="offcanvas" className="btn-action hover-tooltip tooltip-left box-icon">
-                                        <i className="icon icon-Handbag"></i>
+                                        <ShoppingBag height={20} width={20} />
                                         <span className="tooltip">Add to Cart</span>
                                     </a>
                                 </div>
@@ -107,7 +108,7 @@ const ShopLook = () => {
                                 </div>
                                 <div className="mini-action">
                                     <a href="#shoppingCart" data-bs-toggle="offcanvas" className="btn-action hover-tooltip tooltip-left box-icon">
-                                        <i className="icon icon-Handbag"></i>
+                                        <ShoppingBag height={20} width={20} />
                                         <span className="tooltip">Add to Cart</span>
                                     </a>
                                 </div>
@@ -134,7 +135,7 @@ const ShopLook = () => {
                                 </div>
                                 <div className="mini-action">
                                     <a href="#shoppingCart" data-bs-toggle="offcanvas" className="btn-action hover-tooltip tooltip-left box-icon">
-                                        <i className="icon icon-Handbag"></i>
+                                        <ShoppingBag height={20} width={20} />
                                         <span className="tooltip">Add to Cart</span>
                                     </a>
                                 </div>
@@ -143,10 +144,10 @@ const ShopLook = () => {
                     </SwiperSlide>
                     <div className="tes_thumb">
                         <div ref={(node) => setPrevEl(node)} className="tf-sw-nav-circle nav-prev-swiper">
-                            <i className="icon icon-CaretLeft"></i>
+                            <NavArrowLeft height={24} width={24} />
                         </div>
                         <div ref={(node) => setNextEl(node)} className="tf-sw-nav-circle nav-next-swiper">
-                            <i className="icon icon-CaretRightThin"></i>
+                            <NavArrowRight height={24} width={24} />
                         </div>
                     </div>
                 </Swiper>

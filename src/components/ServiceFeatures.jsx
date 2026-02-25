@@ -1,11 +1,12 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
+import { Undo, Package, Headset, Percentage } from "iconoir-react";
 import 'swiper/css';
 import 'swiper/css/pagination';
 
 const ServiceFeatures = () => {
     return (
-        <section className="flat-spacing-4 bg-white">
+        <div className="flat-spacing-4">
             <div className="container-full">
                 <Swiper
                     modules={[Pagination]}
@@ -29,7 +30,7 @@ const ServiceFeatures = () => {
                     <SwiperSlide>
                         <div className="box-icon_V01 style-3 wow fadeInLeft">
                             <span className="icon">
-                                <i className="icon-ArrowUDownLeft"></i>
+                                <Undo height={36} width={36} />
                             </span>
                             <div className="content">
                                 <h6 className="title">14-Day Returns</h6>
@@ -41,7 +42,7 @@ const ServiceFeatures = () => {
                     <SwiperSlide>
                         <div className="box-icon_V01 style-3 wow fadeInLeft">
                             <span className="icon">
-                                <i className="icon-Package"></i>
+                                <Package height={36} width={36} />
                             </span>
                             <div className="content">
                                 <h6 className="title">Free Shipping</h6>
@@ -53,7 +54,7 @@ const ServiceFeatures = () => {
                     <SwiperSlide>
                         <div className="box-icon_V01 style-3 wow fadeInLeft">
                             <span className="icon">
-                                <i className="icon-Headset"></i>
+                                <Headset height={36} width={36} />
                             </span>
                             <div className="content">
                                 <h6 className="title">24/7 Support</h6>
@@ -65,7 +66,7 @@ const ServiceFeatures = () => {
                     <SwiperSlide>
                         <div className="box-icon_V01 style-3 wow fadeInLeft">
                             <span className="icon">
-                                <i className="icon-SealPercent"></i>
+                                <Percentage height={36} width={36} />
                             </span>
                             <div className="content">
                                 <h6 className="title">Member Discounts</h6>
@@ -74,9 +75,9 @@ const ServiceFeatures = () => {
                         </div>
                     </SwiperSlide>
                 </Swiper>
-                <div className="sw-line-default style-2 sw-pagination-service"></div>
+                <div className="sw-line-default style-2 tf-sw-pagination sw-pagination-service"></div>
             </div>
-        </section>
+        </div>
     );
 };
 

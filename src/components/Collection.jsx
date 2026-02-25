@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { NavArrowRight } from "iconoir-react";
 
 const Collection = () => {
     const [activeTab, setActiveTab] = useState('tabCls1');
@@ -22,7 +23,7 @@ const Collection = () => {
                             <li className={`nav-tab-item ${activeTab === 'tabCls1' ? 'active' : ''}`} onClick={() => handleTabClick('tabCls1')}>
                                 <div className={`accordion-title ${activeTab === 'tabCls1' ? '' : 'collapsed'}`} role="button" aria-expanded={activeTab === 'tabCls1'}>
                                     <span className="h5 fw-medium">Fresh Seasonal Designs</span>
-                                    <span className="icon icon-ArrowRight"></span>
+                                    <NavArrowRight height={24} width={24} className="icon-ArrowRight" />
                                 </div>
                                 <div className={`collapse ${activeTab === 'tabCls1' ? 'show' : ''}`}>
                                     <p className="accordion-content cl-text-2">
@@ -34,7 +35,7 @@ const Collection = () => {
                             <li className={`nav-tab-item ${activeTab === 'tabCls2' ? 'active' : ''}`} onClick={() => handleTabClick('tabCls2')}>
                                 <div className={`accordion-title ${activeTab === 'tabCls2' ? '' : 'collapsed'}`} role="button" aria-expanded={activeTab === 'tabCls2'}>
                                     <span className="h5 fw-medium">Sparkling Diamond Favorites</span>
-                                    <span className="icon icon-ArrowRight"></span>
+                                    <NavArrowRight height={24} width={24} className="icon-ArrowRight" />
                                 </div>
                                 <div className={`collapse ${activeTab === 'tabCls2' ? 'show' : ''}`}>
                                     <p className="accordion-content cl-text-2">
@@ -46,7 +47,7 @@ const Collection = () => {
                             <li className={`nav-tab-item ${activeTab === 'tabCls3' ? 'active' : ''}`} onClick={() => handleTabClick('tabCls3')}>
                                 <div className={`accordion-title ${activeTab === 'tabCls3' ? '' : 'collapsed'}`} role="button" aria-expanded={activeTab === 'tabCls3'}>
                                     <span className="h5 fw-medium">Bold Designs That Elevate Looks</span>
-                                    <span className="icon icon-ArrowRight"></span>
+                                    <NavArrowRight height={24} width={24} className="icon-ArrowRight" />
                                 </div>
                                 <div className={`collapse ${activeTab === 'tabCls3' ? 'show' : ''}`}>
                                     <p className="accordion-content cl-text-2">
@@ -58,7 +59,7 @@ const Collection = () => {
                             <li className={`nav-tab-item ${activeTab === 'tabCls4' ? 'active' : ''}`} onClick={() => handleTabClick('tabCls4')}>
                                 <div className={`accordion-title ${activeTab === 'tabCls4' ? '' : 'collapsed'}`} role="button" aria-expanded={activeTab === 'tabCls4'}>
                                     <span className="h5 fw-medium">Responsibly Made Conscious Fashion</span>
-                                    <span className="icon icon-ArrowRight"></span>
+                                    <NavArrowRight height={24} width={24} className="icon-ArrowRight" />
                                 </div>
                                 <div className={`collapse ${activeTab === 'tabCls4' ? 'show' : ''}`}>
                                     <p className="accordion-content cl-text-2">

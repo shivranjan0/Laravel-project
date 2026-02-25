@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
+import { Eye } from 'iconoir-react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -39,7 +40,7 @@ const Instagram = () => {
                             <img loading="lazy" width="346" height="346" src="/assets/images/gallery/gallery-52.jpg" alt="Image" />
                         </div>
                         <a href="product-detail.html" className="box-icon hover-tooltip rounded-circle">
-                            <span className="icon icon-Eye"></span>
+                            <Eye height={20} width={20} className="icon-Eye" />
                             <span className="tooltip">View product</span>
                         </a>
                     </div>
@@ -51,7 +52,7 @@ const Instagram = () => {
                             <img loading="lazy" width="346" height="346" src="/assets/images/gallery/gallery-53.jpg" alt="Image" />
                         </div>
                         <a href="product-detail.html" className="box-icon hover-tooltip rounded-circle">
-                            <span className="icon icon-Eye"></span>
+                            <Eye height={20} width={20} className="icon-Eye" />
                             <span className="tooltip">View product</span>
                         </a>
                     </div>
@@ -63,7 +64,7 @@ const Instagram = () => {
                             <img loading="lazy" width="346" height="346" src="/assets/images/gallery/gallery-54.jpg" alt="Image" />
                         </div>
                         <a href="product-detail.html" className="box-icon hover-tooltip rounded-circle">
-                            <span className="icon icon-Eye"></span>
+                            <Eye height={20} width={20} className="icon-Eye" />
                             <span className="tooltip">View product</span>
                         </a>
                     </div>
@@ -75,7 +76,7 @@ const Instagram = () => {
                             <img loading="lazy" width="346" height="346" src="/assets/images/gallery/gallery-55.jpg" alt="Image" />
                         </div>
                         <a href="product-detail.html" className="box-icon hover-tooltip rounded-circle">
-                            <span className="icon icon-Eye"></span>
+                            <Eye height={20} width={20} className="icon-Eye" />
                             <span className="tooltip">View product</span>
                         </a>
                     </div>
@@ -87,7 +88,7 @@ const Instagram = () => {
                             <img loading="lazy" width="346" height="346" src="/assets/images/gallery/gallery-56.jpg" alt="Image" />
                         </div>
                         <a href="product-detail.html" className="box-icon hover-tooltip rounded-circle">
-                            <span className="icon icon-Eye"></span>
+                            <Eye height={20} width={20} className="icon-Eye" />
                             <span className="tooltip">View product</span>
                         </a>
                     </div>
