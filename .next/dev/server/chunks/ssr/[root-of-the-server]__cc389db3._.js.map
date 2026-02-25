@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 40, "column": 0}, "map": {"version":3,"sources":["file:///C:/xampp/htdocs/ecommerce-frontend/src/pages/_document.jsx"],"sourcesContent":["import { Html, Head, Main, NextScript } from 'next/document'\r\n\r\nexport default function Document() {\r\n    return (\r\n        <Html lang=\"en\">\r\n            <Head>\r\n                <meta charSet=\"UTF-8\" />\r\n                <link rel=\"icon\" type=\"image/svg+xml\" href=\"/vite.svg\" />\r\n            </Head>\r\n            <body>\r\n                <Main />\r\n                <NextScript />\r\n                <script src=\"/assets/js/plugin/jquery.min.js\"></script>\r\n                <script src=\"/assets/js/plugin/bootstrap.min.js\"></script>\r\n            </body>\r\n        </Html>\r\n    )\r\n}\r\n"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACpB,qBACI,qKAAC,iIAAI;QAAC,MAAK;;0BACP,qKAAC,iIAAI;;kCACD,qKAAC;wBAAK,SAAQ;;;;;;kCACd,qKAAC;wBAAK,KAAI;wBAAO,MAAK;wBAAgB,MAAK;;;;;;;;;;;;0BAE/C,qKAAC;;kCACG,qKAAC,iIAAI;;;;;kCACL,qKAAC,uIAAU;;;;;kCACX,qKAAC;wBAAO,KAAI;;;;;;kCACZ,qKAAC;wBAAO,KAAI;;;;;;;;;;;;;;;;;;AAI5B"}}]
+}

@@ -8038,12 +8038,16 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .tf-check::before {
-  font-family: "icomoon";
-  content: "\e90f";
+  content: "";
   position: absolute;
-  color: var(--white);
+  width: 10px;
+  height: 10px;
+  background-color: var(--white);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12L9 17L20 6'/%3E%3C/svg%3E") no-repeat center;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12L9 17L20 6'/%3E%3C/svg%3E") no-repeat center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
   opacity: 0;
-  font-size: 12px;
   transform: scale(0);
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -8059,7 +8063,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .tf-check.style-2::before {
-  font-size: 14px;
+  width: 14px;
+  height: 14px;
 }
 
 .tf-check-rounded {
@@ -22629,7 +22634,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   font-size: 174px;
   line-height: 119px;
   font-weight: 700;
-  background-image: url("./../images/section/text-image.jpg");
+  /* background-image: url("./../images/section/text-image.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-clip: text;

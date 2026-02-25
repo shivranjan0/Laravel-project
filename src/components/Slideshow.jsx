@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectFade, Navigation } from "swiper/modules";
+import { NavArrowLeft, NavArrowRight } from "iconoir-react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
@@ -133,10 +134,10 @@ function Slideshow() {
                 <div className="container-full">
                     <div className="d-flex align-items-center justify-content-between">
                         <div className="tf-sw-nav-2 d-lg-flex d-none nav-prev-swiper">
-                            <i className="icon icon-ArrowLeft"></i>
+                            <NavArrowLeft height={24} width={24} />
                         </div>
                         <div className="tf-sw-nav-2 d-lg-flex d-none nav-next-swiper">
-                            <i className="icon icon-ArrowRight"></i>
+                            <NavArrowRight height={24} width={24} />
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,440 @@
+/* [project]/src/assets/icon/icomoon/style.css [client] (css) */
+@font-face {
+  font-family: icomoon;
+  src: url("../media/icomoon.51328dcb.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  speak: never;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  font-family: icomoon !important;
+}
+
+.icon-Exclude:before {
+  content: "";
+}
+
+.icon-Feather:before {
+  content: "";
+}
+
+.icon-ShieldCheck:before {
+  content: "";
+}
+
+.icon-SneakerMove:before {
+  content: "";
+}
+
+.icon-Sparkle:before {
+  content: "";
+}
+
+.icon-Wind:before {
+  content: "";
+}
+
+.icon-Star-3:before {
+  content: "";
+}
+
+.icon-CodeBlock:before {
+  content: "";
+}
+
+.icon-Files:before {
+  content: "";
+}
+
+.icon-Question1:before {
+  content: "";
+}
+
+.icon-Browsers:before {
+  content: "";
+}
+
+.icon-Devices:before {
+  content: "";
+}
+
+.icon-Layout:before {
+  content: "";
+}
+
+.icon-ListDashes:before {
+  content: "";
+}
+
+.icon-MouseScroll:before {
+  content: "";
+}
+
+.icon-PictureInPicture:before {
+  content: "";
+}
+
+.icon-PuzzlePiece:before {
+  content: "";
+}
+
+.icon-Slideshow:before {
+  content: "";
+}
+
+.icon-TextAa:before {
+  content: "";
+}
+
+.icon-TextIndent:before {
+  content: "";
+}
+
+.icon-btn3d:before {
+  content: "";
+}
+
+.icon-grid-5:before {
+  content: "";
+}
+
+.icon-grid-6:before {
+  content: "";
+}
+
+.icon-video:before {
+  content: "";
+}
+
+.icon-Leaf:before {
+  content: "";
+}
+
+.icon-Users:before {
+  content: "";
+}
+
+.icon-Armchair:before {
+  content: "";
+}
+
+.icon-NotePencil:before {
+  content: "";
+}
+
+.icon-ArrowUpRight1:before {
+  content: "";
+}
+
+.icon-EyeSlash:before {
+  content: "";
+}
+
+.icon-filter:before {
+  content: "";
+}
+
+.icon-Star2:before {
+  content: "";
+}
+
+.icon-trash:before {
+  content: "";
+}
+
+.icon-magnifying-glass:before {
+  content: "";
+}
+
+.icon-heart:before {
+  content: "";
+}
+
+.icon-Heart:before {
+  content: "";
+}
+
+.icon-user:before {
+  content: "";
+}
+
+.icon-storefront:before {
+  content: "";
+}
+
+.icon-shopping-cart-simple:before {
+  content: "";
+}
+
+.icon-sidebar:before {
+  content: "";
+}
+
+.icon-X2:before {
+  content: "";
+}
+
+.icon-ArrowFatUp:before {
+  content: "";
+}
+
+.icon-ArrowsLeftRight:before {
+  content: "";
+}
+
+.icon-CheckCircle:before {
+  content: "";
+}
+
+.icon-Eye:before {
+  content: "";
+}
+
+.icon-minus:before {
+  content: "";
+}
+
+.icon-plus:before {
+  content: "";
+}
+
+.icon-Ruler:before {
+  content: "";
+}
+
+.icon-ArrowClockwise:before {
+  content: "";
+}
+
+.icon-ArrowLongRight:before {
+  content: "";
+}
+
+.icon-ArrowLongLeft:before {
+  content: "";
+}
+
+.icon-ArrowLongTop:before {
+  content: "";
+}
+
+.icon-ArrowLongBottom:before {
+  content: "";
+}
+
+.icon-ArrowRight:before {
+  content: "";
+}
+
+.icon-ArrowTop:before {
+  content: "";
+}
+
+.icon-ArrowBottom:before {
+  content: "";
+}
+
+.icon-ArrowLeft:before {
+  content: "";
+}
+
+.icon-ArrowUDownLeft:before {
+  content: "";
+}
+
+.icon-ArrowUpRight:before {
+  content: "";
+}
+
+.icon-CalendarBlank:before {
+  content: "";
+}
+
+.icon-CaretDown:before {
+  content: "";
+}
+
+.icon-CaretLeft:before {
+  content: "";
+}
+
+.icon-CaretRightThin:before {
+  content: "";
+}
+
+.icon-CaretBottomThin:before {
+  content: "";
+}
+
+.icon-CaretTopThin:before {
+  content: "";
+}
+
+.icon-CopySimple:before {
+  content: "";
+}
+
+.icon-Eye-1:before {
+  content: "";
+}
+
+.icon-FacebookLogo:before {
+  content: "";
+}
+
+.icon-check:before {
+  content: "";
+}
+
+.icon-GearSix:before {
+  content: "";
+}
+
+.icon-GitDiff:before {
+  content: "";
+}
+
+.icon-Handbag:before {
+  content: "";
+}
+
+.icon-Headset:before {
+  content: "";
+}
+
+.icon-HeartStraight:before {
+  content: "";
+}
+
+.icon-HourglassMedium:before {
+  content: "";
+}
+
+.icon-HouseLine:before {
+  content: "";
+}
+
+.icon-InstagramLogo:before {
+  content: "";
+}
+
+.icon-Lightning:before {
+  content: "";
+}
+
+.icon-Lightning-1:before {
+  content: "";
+}
+
+.icon-List:before {
+  content: "";
+}
+
+.icon-grid-2:before {
+  content: "";
+}
+
+.icon-grid-4:before {
+  content: "";
+}
+
+.icon-grid-3:before {
+  content: "";
+}
+
+.icon-MagnifyingGlass:before {
+  content: "";
+}
+
+.icon-Package:before {
+  content: "";
+}
+
+.icon-Question:before {
+  content: "";
+}
+
+.icon-ReceiptX:before {
+  content: "";
+}
+
+.icon-SealPercent:before {
+  content: "";
+}
+
+.icon-ShareNetwork:before {
+  content: "";
+}
+
+.icon-SignOut:before {
+  content: "";
+}
+
+.icon-SnapchatLogo:before {
+  content: "";
+}
+
+.icon-SquaresFour:before {
+  content: "";
+}
+
+.icon-Star:before {
+  content: "";
+}
+
+.icon-Star-thin:before {
+  content: "";
+}
+
+.icon-Tag:before {
+  content: "";
+}
+
+.icon-TiktokLogo:before {
+  content: "";
+}
+
+.icon-Timer:before {
+  content: "";
+}
+
+.icon-Truck:before {
+  content: "";
+}
+
+.icon-Truck2:before {
+  content: "";
+}
+
+.icon-User:before {
+  content: "";
+}
+
+.icon-Vector:before {
+  content: "";
+  color: #3dab25;
+}
+
+.icon-CheckCircle1:before {
+  content: "";
+  color: #3dab25;
+}
+
+.icon-X:before {
+  content: "";
+}
+
+.icon-XLogo:before {
+  content: "";
+}
+
+/*# sourceMappingURL=src_assets_icon_icomoon_style_css_65f1660e._.single.css.map*/

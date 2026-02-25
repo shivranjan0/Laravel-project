@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
+import { Star, CheckCircle } from 'iconoir-react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -46,16 +47,16 @@ const Testimonials = () => {
                         <SwiperSlide>
                             <div className="testimonial-v04 style-2 wow fadeInUp">
                                 <div className="star-wrap d-flex align-items-center mb-12">
-                                    <i className="icon icon-Star fs-24"></i>
-                                    <i className="icon icon-Star fs-24"></i>
-                                    <i className="icon icon-Star fs-24"></i>
-                                    <i className="icon icon-Star fs-24"></i>
-                                    <i className="icon icon-Star fs-24"></i>
+                                    <Star height={24} width={24} className="text-primary" />
+                                    <Star height={24} width={24} className="text-primary" />
+                                    <Star height={24} width={24} className="text-primary" />
+                                    <Star height={24} width={24} className="text-primary" />
+                                    <Star height={24} width={24} className="text-primary" />
                                 </div>
                                 <div className="tes_author d-flex align-items-center gap-8 mb-20">
                                     <h6 className="author-name">Emma Collins</h6>
                                     <div className="author-verified d-flex align-items-center gap-4">
-                                        <i className="icon icon-CheckCircle1"></i>
+                                        <CheckCircle height={20} width={20} className="text-primary" />
                                         <span className="cl-text-2">
                                             Verified Buyer
                                         </span>
@@ -88,16 +89,16 @@ const Testimonials = () => {
                         <SwiperSlide>
                             <div className="testimonial-v04 style-2 wow fadeInUp">
                                 <div className="star-wrap d-flex align-items-center mb-12">
-                                    <i className="icon icon-Star fs-24"></i>
-                                    <i className="icon icon-Star fs-24"></i>
-                                    <i className="icon icon-Star fs-24"></i>
-                                    <i className="icon icon-Star fs-24"></i>
-                                    <i className="icon icon-Star fs-24"></i>
+                                    <Star height={24} width={24} className="text-primary" />
+                                    <Star height={24} width={24} className="text-primary" />
+                                    <Star height={24} width={24} className="text-primary" />
+                                    <Star height={24} width={24} className="text-primary" />
+                                    <Star height={24} width={24} className="text-primary" />
                                 </div>
                                 <div className="tes_author d-flex align-items-center gap-8 mb-20">
                                     <h6 className="author-name">Evelyn Taylor</h6>
                                     <div className="author-verified d-flex align-items-center gap-4">
-                                        <i className="icon icon-CheckCircle1"></i>
+                                        <CheckCircle height={20} width={20} className="text-primary" />
                                         <span className="cl-text-2">
                                             Verified Buyer
                                         </span>
@@ -130,16 +131,16 @@ const Testimonials = () => {
                         <SwiperSlide>
                             <div className="testimonial-v04 style-2 wow fadeInUp">
                                 <div className="star-wrap d-flex align-items-center mb-12">
-                                    <i className="icon icon-Star fs-24"></i>
-                                    <i className="icon icon-Star fs-24"></i>
-                                    <i className="icon icon-Star fs-24"></i>
-                                    <i className="icon icon-Star fs-24"></i>
-                                    <i className="icon icon-Star fs-24"></i>
+                                    <Star height={24} width={24} className="text-primary" />
+                                    <Star height={24} width={24} className="text-primary" />
+                                    <Star height={24} width={24} className="text-primary" />
+                                    <Star height={24} width={24} className="text-primary" />
+                                    <Star height={24} width={24} className="text-primary" />
                                 </div>
                                 <div className="tes_author d-flex align-items-center gap-8 mb-20">
                                     <h6 className="author-name">Cara Wang</h6>
                                     <div className="author-verified d-flex align-items-center gap-4">
-                                        <i className="icon icon-CheckCircle1"></i>
+                                        <CheckCircle height={20} width={20} className="text-primary" />
                                         <span className="cl-text-2">
                                             Verified Buyer
                                         </span>

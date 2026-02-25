@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Heart, Eye, DataTransferBoth, Star } from "iconoir-react";
 
 const ProductCard = ({ img1, img2, title, price, oldPrice, isNew, sale, marquee, rating, userSizes, colors, countdown, sizes }) => {
     const [timeLeft, setTimeLeft] = useState({
@@ -50,19 +51,19 @@ const ProductCard = ({ img1, img2, title, price, oldPrice, isNew, sale, marquee,
                 <ul className="product-action_list">
                     <li className="wishlist">
                         <a href="#;" className="hover-tooltip tooltip-left box-icon">
-                            <span className="icon icon-HeartStraight"></span>
+                            <Heart height={18} width={18} />
                             <span className="tooltip">Add to Wishlist</span>
                         </a>
                     </li>
                     <li className="compare">
                         <a href="#compare" data-bs-toggle="offcanvas" className="hover-tooltip tooltip-left box-icon">
-                            <span className="icon icon-ArrowsLeftRight"></span>
+                            <DataTransferBoth height={18} width={18} />
                             <span className="tooltip">Compare</span>
                         </a>
                     </li>
                     <li>
                         <a href="#quickView" data-bs-toggle="offcanvas" className="hover-tooltip tooltip-left box-icon">
-                            <span className="icon icon-Eye"></span>
+                            <Eye height={18} width={18} />
                             <span className="tooltip">Quick view</span>
                         </a>
                     </li>
@@ -104,7 +105,7 @@ const ProductCard = ({ img1, img2, title, price, oldPrice, isNew, sale, marquee,
                                 {[...Array(10)].map((_, index) => (
                                     <div key={index} className="d-flex align-items-center gap-10">
                                         <div className="marquee-child-item">HOT SALE 25% OFF</div>
-                                        <i className="icon icon-Star2"></i>
+                                        <Star height={14} width={14} />
                                     </div>
                                 ))}
                             </div>
@@ -114,13 +115,11 @@ const ProductCard = ({ img1, img2, title, price, oldPrice, isNew, sale, marquee,
             </div>
             <div className="card-product_info">
                 <a href="product-detail.html" className="name-product lh-24 fw-medium link-underline-text">{title}</a>
-                {rating && (
-                    <div className="star-wrap d-flex align-items-center">
-                        {[...Array(5)].map((_, i) => (
-                            <i key={i} className={`icon icon-Star ${i < rating ? "" : "text-muted"}`}></i>
-                        ))}
-                    </div>
-                )}
+                <div className="star-wrap d-flex align-items-center mt-2">
+                    {[...Array(5)].map((_, i) => (
+                        <Star key={i} height={14} width={14} className={i < (rating || 0) ? "text-primary" : "cl-text-3"} />
+                    ))}
+                </div>
                 <div className="price-wrap">
                     <span className="price-new text-primary fw-semibold">{price}</span>
                     {oldPrice && <span className="price-old text-caption-01 cl-text-3">{oldPrice}</span>}

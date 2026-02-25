@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { Xmark, EditPencil, DeliveryTruck, Percentage } from "iconoir-react";
 
 const ShoppingCart = () => {
     return (
@@ -5,7 +7,7 @@ const ShoppingCart = () => {
             <div className="tf-minicart-recommendations file-delete">
                 <div className="title d-flex justify-content-between align-items-center">
                     <h5>You Might Like</h5>
-                    <i className="icon icon-X2 link remove fs-24 cs-pointer"></i>
+                    <Xmark className="link remove fs-24 cs-pointer" height={24} width={24} />
                 </div>
                 <div className="wrap-recommendations">
                     <div className="list-cart">
@@ -58,7 +60,7 @@ const ShoppingCart = () => {
                 <div className="popup-header">
                     <div className="d-flex align-items-center justify-content-between mb-12">
                         <h5 className="title">Shopping Cart</h5>
-                        <span className="icon-X2 icon-close-popup" data-bs-dismiss="offcanvas"></span>
+                        <Xmark className="icon-close-popup" data-bs-dismiss="offcanvas" height={24} width={24} />
                     </div>
                     <div className="cart-threshold">
                         <p className="text">
@@ -168,15 +170,15 @@ const ShoppingCart = () => {
                         <div className="tf-mini-cart-bottom box-empty_clear">
                             <div className="tf-mini-cart-tool">
                                 <div className="tf-mini-cart-tool-btn btn-add-note">
-                                    <i className="icon icon-NotePencil"></i>
+                                    <EditPencil height={20} width={20} />
                                     <div className="lh-24">Note</div>
                                 </div>
                                 <div className="tf-mini-cart-tool-btn btn-estimate-shipping">
-                                    <i className="icon icon-Truck"></i>
+                                    <DeliveryTruck height={20} width={20} />
                                     <div className="lh-24">Shipping</div>
                                 </div>
                                 <div className="tf-mini-cart-tool-btn btn-add-gift">
-                                    <i className="icon icon-SealPercent"></i>
+                                    <Percentage height={20} width={20} />
                                     <div className="lh-24">Coupon</div>
                                 </div>
                             </div>
@@ -194,7 +196,7 @@ const ShoppingCart = () => {
                                     </label>
                                 </div>
                                 <div className="tf-mini-cart-view-checkout">
-                                    <a href="view-cart.html" className="tf-btn btn-stroke">View cart</a>
+                                    <Link href="/view-cart" className="tf-btn btn-stroke" data-bs-dismiss="offcanvas">View cart</Link>
                                     <a href="checkout.html" className="tf-btn animate-btn">Check Out</a>
                                 </div>
                                 <a href="shop-default.html" className="d-flex justify-content-center fw-semibold text-center link">

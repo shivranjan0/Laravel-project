@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay"; // Ensure autoplay is available if needed, though basic css import might suffice for core
 import { Autoplay } from "swiper/modules";
+import { Search, User, Heart, ShoppingBag, NavArrowLeft, NavArrowRight, Facebook, X, Instagram, Percentage, Menu, NavArrowDown } from "iconoir-react";
 
 function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -59,7 +60,7 @@ function Header() {
                         </div>
                         <div className="col-sm-1 d-none d-xl-block">
                             <div className="nav-prev-swiper d-flex text-white link">
-                                <i className="icon icon-CaretLeft"></i>
+                                <NavArrowLeft color="white" height={20} width={20} />
                             </div>
                         </div>
                         <div className="col-lg-6 col-xl-4">
@@ -73,7 +74,7 @@ function Header() {
                                 >
                                     <SwiperSlide>
                                         <div className="d-flex align-items-center justify-content-center gap-8">
-                                            <i className="icon icon-SealPercent text-primary fs-20"></i>
+                                            <Percentage className="text-primary" height={20} width={20} />
                                             <p className="text-white text-start text-line-clamp-1">
                                                 20% Off – Auto Applied at Checkout – Limited Time Only
                                             </p>
@@ -89,16 +90,14 @@ function Header() {
                         </div>
                         <div className="col-sm-1 d-none d-xl-block">
                             <div className="nav-next-swiper d-flex text-white link justify-content-end">
-                                <i className="icon icon-CaretRightThin"></i>
+                                <NavArrowRight color="white" height={20} width={20} />
                             </div>
                         </div>
                         <div className="col-lg-3 d-none d-lg-block">
                             <div className="d-flex align-items-center justify-content-end gap-20">
-                                <a href="https://www.facebook.com/" target="_blank" className="d-flex"><i className="fs-20 text-white link icon icon-FacebookLogo"></i></a>
-                                <a href="https://x.com/" target="_blank" className="d-flex"><i className="fs-20 text-white link icon icon-XLogo"></i></a>
-                                <a href="https://www.instagram.com/" target="_blank" className="d-flex"><i className="fs-20 text-white link icon icon-InstagramLogo"></i></a>
-                                <a href="https://www.tiktok.com/" target="_blank" className="d-flex"><i className="fs-20 text-white link icon icon-TiktokLogo"></i></a>
-                                <a href="https://www.snapchat.com/" target="_blank" className="d-flex"><i className="fs-20 text-white link icon icon-SnapchatLogo"></i></a>
+                                <a href="https://www.facebook.com/" target="_blank" className="d-flex"><Facebook className="text-white link" height={18} width={18} /></a>
+                                <a href="https://x.com/" target="_blank" className="d-flex"><X className="text-white link" height={18} width={18} /></a>
+                                <a href="https://www.instagram.com/" target="_blank" className="d-flex"><Instagram className="text-white link" height={18} width={18} /></a>
                             </div>
                         </div>
                     </div>
@@ -115,7 +114,7 @@ function Header() {
                     <div className="header-inner">
                         <div className="box-open-menu-mobile d-xl-none">
                             <a href="#mobileMenu" data-bs-toggle="offcanvas" className="btn-open-menu">
-                                <i className="icon icon-List"></i>
+                                <Menu height={24} width={24} />
                             </a>
                         </div>
                         <div className="header-left d-none d-xl-flex">
@@ -124,40 +123,26 @@ function Header() {
                             </a>
                             <nav className="box-navigation">
                                 <ul className="box-nav-menu">
-                                    <li className="menu-item position-relative">
-                                        <Link to="/" className="item-link">
-                                            <span className="text cus-text">Home</span>
-                                            <i className="icon icon-CaretDown"></i>
+
+                                    <li className="menu-item">
+                                        <Link href="/collection" className="item-link">
+                                            <span className="text cus-text">New & Featured</span>
                                         </Link>
                                     </li>
                                     <li className="menu-item">
-                                        <Link to="/shop" className="item-link">
-                                            <span className="text cus-text">Shop</span>
-                                            <i className="icon icon-CaretDown"></i>
+                                        <Link href="/collection" className="item-link">
+                                            <span className="text cus-text">Men</span>
                                         </Link>
                                     </li>
                                     <li className="menu-item">
-                                        <Link to="/product" className="item-link">
+                                        <Link href="/collection" className="item-link">
+                                            <span className="text cus-text">Women</span>
+                                        </Link>
+                                    </li>
+                                    <li className="menu-item">
+                                        <Link href="/product" className="item-link">
                                             <span className="text cus-text">Product</span>
-                                            <i className="icon icon-CaretDown"></i>
                                         </Link>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="#" className="item-link">
-                                            <span className="text cus-text">Blog</span>
-                                            <i className="icon icon-CaretDown"></i>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="#" className="item-link">
-                                            <span className="text cus-text">Pages</span>
-                                            <i className="icon icon-CaretDown"></i>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="#" className="item-link">
-                                            <span className="text cus-text">Buy Template</span>
-                                        </a>
                                     </li>
                                 </ul>
                             </nav>
@@ -173,28 +158,28 @@ function Header() {
                                     <input type="text" placeholder="Search Products" required="" />
                                 </fieldset>
                                 <button type="submit" className="btn-action">
-                                    <i className="icon icon-MagnifyingGlass"></i>
+                                    <Search height={24} width={24} />
                                 </button>
                             </form>
                             <ul className="nav-icon-list">
                                 <li className="d-xl-none">
                                     <a href="#search" data-bs-toggle="modal" className="nav-icon-item link">
-                                        <i className="icon icon-MagnifyingGlass"></i>
+                                        <Search height={24} width={24} />
                                     </a>
                                 </li>
                                 <li className="d-none d-xl-block">
-                                    <a href="#sign" data-bs-toggle="modal" className="nav-icon-item link">
-                                        <i className="icon icon-User"></i>
-                                    </a>
+                                    <Link href="/my-account" className="nav-icon-item link">
+                                        <User height={24} width={24} />
+                                    </Link>
                                 </li>
                                 <li className="d-none d-sm-block">
-                                    <a href="wishlist.html" className="nav-icon-item link">
-                                        <i className="icon icon-HeartStraight"></i>
-                                    </a>
+                                    <Link href="/wishlist" className="nav-icon-item link">
+                                        <Heart height={24} width={24} />
+                                    </Link>
                                 </li>
                                 <li>
                                     <a href="#shoppingCart" data-bs-toggle="offcanvas" className="nav-icon-item link shop-cart">
-                                        <i className="icon icon-Handbag"></i>
+                                        <ShoppingBag height={24} width={24} />
                                         <span className="count">12</span>
                                     </a>
                                 </li>
