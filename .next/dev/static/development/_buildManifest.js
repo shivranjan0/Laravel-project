@@ -11,6 +11,9 @@ self.__BUILD_MANIFEST = {
   "/product": [
     "static/chunks/pages/product.js"
   ],
+  "/wishlist": [
+    "static/chunks/pages/wishlist.js"
+  ],
   "__rewrites": {
     "afterFiles": [],
     "beforeFiles": [],
