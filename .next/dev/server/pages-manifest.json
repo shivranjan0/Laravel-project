@@ -3,7 +3,7 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/collection": "pages/collection.js",
-  "/product": "pages/product.js",
-  "/wishlist": "pages/wishlist.js"
+  "/admin": "pages/admin.js",
+  "/admin/add-product": "pages/admin/add-product.js",
+  "/admin/full-calendar": "pages/admin/full-calendar.js"
 }
