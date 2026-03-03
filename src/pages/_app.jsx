@@ -5,16 +5,23 @@ import MobileToolbar from "../components/MobileToolbar";
 import MobileMenu from "../components/MobileMenu";
 import SearchModal from "../components/SearchModal";
 import Head from "next/head";
+import Script from "next/script";
+import { useRouter } from "next/router";
 
-import "../assets/css/bootstrap.min.css";
-import "../assets/css/animate.css";
-import "../assets/css/swiper-bundle.min.css";
-import "../assets/fonts/fonts.css";
-import "../assets/icon/icomoon/style.css";
-import "../assets/css/styles.css";
 import "../index.css";
 
 export default function MyApp({ Component, pageProps }) {
+    const router = useRouter();
+    const isAdminPage = router.pathname.startsWith("/admin");
+
+    // Admin pages: skip the storefront layout entirely
+    if (isAdminPage || Component.getLayout) {
+        if (Component.getLayout) {
+            return Component.getLayout(<Component {...pageProps} />);
+        }
+        return <Component {...pageProps} />;
+    }
+
     return (
         <>
             <Head>
@@ -27,6 +34,11 @@ export default function MyApp({ Component, pageProps }) {
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
             </Head>
+
+            {/* Global JS Plugins */}
+            <Script src="/assets/js/plugin/bootstrap.bundle.min.js" strategy="afterInteractive" />
+            <Script src="/assets/js/plugin/swiper-bundle.min.js" strategy="afterInteractive" />
+
             <main id="wrapper">
                 <Header />
                 <Component {...pageProps} />

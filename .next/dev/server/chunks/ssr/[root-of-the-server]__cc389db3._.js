@@ -67,6 +67,65 @@ function Document() {
                         fileName: "[project]/src/pages/_document.jsx",
                         lineNumber: 8,
                         columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("link", {
+                        rel: "stylesheet",
+                        href: "/assets/css/bootstrap.min.css"
+                    }, void 0, false, {
+                        fileName: "[project]/src/pages/_document.jsx",
+                        lineNumber: 10,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("link", {
+                        rel: "stylesheet",
+                        href: "/assets/css/animate.css"
+                    }, void 0, false, {
+                        fileName: "[project]/src/pages/_document.jsx",
+                        lineNumber: 11,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("link", {
+                        rel: "stylesheet",
+                        href: "/assets/css/swiper-bundle.min.css"
+                    }, void 0, false, {
+                        fileName: "[project]/src/pages/_document.jsx",
+                        lineNumber: 12,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("link", {
+                        rel: "stylesheet",
+                        href: "/assets/fonts/fonts.css"
+                    }, void 0, false, {
+                        fileName: "[project]/src/pages/_document.jsx",
+                        lineNumber: 13,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("link", {
+                        rel: "stylesheet",
+                        href: "/assets/icon/icomoon/style.css"
+                    }, void 0, false, {
+                        fileName: "[project]/src/pages/_document.jsx",
+                        lineNumber: 14,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("link", {
+                        rel: "stylesheet",
+                        href: "/assets/css/styles.css"
+                    }, void 0, false, {
+                        fileName: "[project]/src/pages/_document.jsx",
+                        lineNumber: 15,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("style", {
+                        children: `
+                    html[data-nav-layout="vertical"] .tf-toolbar-bottom {
+                        display: none !important;
+                    }
+                `
+                    }, void 0, false, {
+                        fileName: "[project]/src/pages/_document.jsx",
+                        lineNumber: 17,
+                        columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
@@ -76,34 +135,41 @@ function Document() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("body", {
                 children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("script", {
+                        dangerouslySetInnerHTML: {
+                            __html: `
+                            (function() {
+                                if (window.location.pathname.startsWith('/admin')) {
+                                    var theme = localStorage.getItem('adminThemeMode') || 'light';
+                                    var bg = theme === 'dark' ? '#1a1c2b' : '#f3f4f9';
+                                    var el = document.documentElement;
+                                    el.setAttribute('data-nav-layout', 'vertical');
+                                    el.setAttribute('data-theme-mode', theme);
+                                    el.style.backgroundColor = bg;
+                                    document.body.style.backgroundColor = bg;
+                                }
+                            })();
+                        `
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/src/pages/_document.jsx",
+                        lineNumber: 30,
+                        columnNumber: 17
+                    }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$document$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["Main"], {}, void 0, false, {
                         fileName: "[project]/src/pages/_document.jsx",
-                        lineNumber: 11,
+                        lineNumber: 47,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$document$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["NextScript"], {}, void 0, false, {
                         fileName: "[project]/src/pages/_document.jsx",
-                        lineNumber: 12,
-                        columnNumber: 17
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("script", {
-                        src: "/assets/js/plugin/jquery.min.js"
-                    }, void 0, false, {
-                        fileName: "[project]/src/pages/_document.jsx",
-                        lineNumber: 13,
-                        columnNumber: 17
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("script", {
-                        src: "/assets/js/plugin/bootstrap.min.js"
-                    }, void 0, false, {
-                        fileName: "[project]/src/pages/_document.jsx",
-                        lineNumber: 14,
+                        lineNumber: 48,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/pages/_document.jsx",
-                lineNumber: 10,
+                lineNumber: 23,
                 columnNumber: 13
             }, this)
         ]

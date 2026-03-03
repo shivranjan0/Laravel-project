@@ -1,0 +1,232 @@
+/* ===========================
+   Admin Dark Mode Overrides
+   =========================== */
+
+/* Footer */
+.footer {
+    background-color: var(--custom-white);
+    color: var(--default-text-color);
+}
+
+[data-theme-mode="dark"] .footer {
+    background-color: var(--custom-white, #212332) !important;
+    border-color: var(--default-border, #3a3d52) !important;
+    color: var(--default-text-color, #e0e0e0) !important;
+}
+
+/* Main page background */
+[data-theme-mode="dark"] body,
+[data-theme-mode="dark"] .main-content,
+[data-theme-mode="dark"] .app-content,
+[data-theme-mode="dark"] .container-fluid,
+[data-theme-mode="dark"] .page {
+    background-color: var(--custom-body-bg, #1a1c2b) !important;
+    color: var(--default-text-color, #e0e0e0) !important;
+}
+
+/* Bootstrap bg-white / bg-light overrides */
+[data-theme-mode="dark"] .bg-white {
+    background-color: var(--custom-white, #212332) !important;
+    color: var(--default-text-color, #e0e0e0) !important;
+}
+
+[data-theme-mode="dark"] .bg-light {
+    background-color: var(--light, #2a2d3e) !important;
+    color: var(--default-text-color, #e0e0e0) !important;
+}
+
+/* Input group text in dark mode */
+[data-theme-mode="dark"] .input-group-text {
+    background-color: var(--light, #2a2d3e) !important;
+    color: var(--default-text-color, #e0e0e0) !important;
+    border-color: var(--default-border, #3a3d52) !important;
+}
+
+/* Form inputs in dark mode */
+[data-theme-mode="dark"] .form-control,
+[data-theme-mode="dark"] .breadcrumb-input {
+    background-color: var(--custom-white, #212332) !important;
+    color: var(--default-text-color, #e0e0e0) !important;
+    border-color: var(--default-border, #3a3d52) !important;
+}
+
+[data-theme-mode="dark"] .form-control::placeholder {
+    color: var(--text-muted, #7a7f9a) !important;
+}
+
+/* Cards */
+[data-theme-mode="dark"] .card,
+[data-theme-mode="dark"] .custom-card {
+    background-color: var(--custom-white, #212332) !important;
+    border-color: var(--default-border, #3a3d52) !important;
+    color: var(--default-text-color, #e0e0e0) !important;
+}
+
+[data-theme-mode="dark"] .card-body,
+[data-theme-mode="dark"] .card-header,
+[data-theme-mode="dark"] .card-footer {
+    background-color: transparent !important;
+    border-color: var(--default-border, #3a3d52) !important;
+    color: var(--default-text-color, #e0e0e0) !important;
+}
+
+/* ==========================================
+   List Group items — THIS is the white area
+   ========================================== */
+[data-theme-mode="dark"] .list-group-item {
+    background-color: var(--custom-white, #212332) !important;
+    border-color: var(--default-border, #3a3d52) !important;
+    color: var(--default-text-color, #e0e0e0) !important;
+}
+
+[data-theme-mode="dark"] .list-group-item:hover,
+[data-theme-mode="dark"] .list-group-item:focus {
+    background-color: var(--light, #2a2d3e) !important;
+}
+
+[data-theme-mode="dark"] .list-group-flush .list-group-item {
+    background-color: transparent !important;
+    border-color: var(--default-border, #3a3d52) !important;
+}
+
+/* ApexCharts dark mode fixes */
+[data-theme-mode="dark"] .apexcharts-canvas {
+    background: transparent !important;
+}
+
+[data-theme-mode="dark"] .apexcharts-tooltip {
+    background: var(--custom-white, #212332) !important;
+    color: var(--default-text-color, #e0e0e0) !important;
+    border-color: var(--default-border, #3a3d52) !important;
+}
+
+[data-theme-mode="dark"] .apexcharts-tooltip-title {
+    background: var(--light, #2a2d3e) !important;
+    border-bottom-color: var(--default-border, #3a3d52) !important;
+    color: var(--default-text-color, #e0e0e0) !important;
+}
+
+[data-theme-mode="dark"] .apexcharts-xaxistooltip,
+[data-theme-mode="dark"] .apexcharts-yaxistooltip {
+    background-color: var(--custom-white, #212332) !important;
+    border-color: var(--default-border, #3a3d52) !important;
+    color: var(--default-text-color, #e0e0e0) !important;
+}
+
+[data-theme-mode="dark"] .apexcharts-gridline {
+    stroke: var(--default-border, #3a3d52) !important;
+}
+
+[data-theme-mode="dark"] .apexcharts-text tspan,
+[data-theme-mode="dark"] .apexcharts-yaxis-label tspan,
+[data-theme-mode="dark"] .apexcharts-xaxis-label tspan {
+    fill: var(--text-muted, #7a7f9a) !important;
+}
+
+/* Dropdowns */
+[data-theme-mode="dark"] .dropdown-menu {
+    background-color: var(--custom-white, #212332) !important;
+    border-color: var(--default-border, #3a3d52) !important;
+}
+
+[data-theme-mode="dark"] .dropdown-item {
+    color: var(--default-text-color, #e0e0e0) !important;
+}
+
+[data-theme-mode="dark"] .dropdown-item:hover,
+[data-theme-mode="dark"] .dropdown-item:focus {
+    background-color: var(--light, #2a2d3e) !important;
+}
+
+[data-theme-mode="dark"] .dropdown-divider {
+    border-color: var(--default-border, #3a3d52) !important;
+}
+
+/* Tables */
+[data-theme-mode="dark"] .table {
+    color: var(--default-text-color, #e0e0e0) !important;
+    border-color: var(--default-border, #3a3d52) !important;
+}
+
+[data-theme-mode="dark"] .table td,
+[data-theme-mode="dark"] .table th,
+[data-theme-mode="dark"] .table thead th {
+    border-color: var(--default-border, #3a3d52) !important;
+    color: var(--default-text-color, #e0e0e0) !important;
+    background-color: transparent !important;
+}
+
+[data-theme-mode="dark"] .table-striped>tbody>tr:nth-of-type(odd)>* {
+    background-color: var(--light, #2a2d3e) !important;
+    color: var(--default-text-color, #e0e0e0) !important;
+}
+
+/* Borders */
+[data-theme-mode="dark"] .border,
+[data-theme-mode="dark"] .border-top,
+[data-theme-mode="dark"] .border-bottom,
+[data-theme-mode="dark"] .border-start,
+[data-theme-mode="dark"] .border-end {
+    border-color: var(--default-border, #3a3d52) !important;
+}
+
+/* Text muted */
+[data-theme-mode="dark"] .text-muted {
+    color: var(--text-muted, #7a7f9a) !important;
+}
+
+/* Breadcrumb header area */
+[data-theme-mode="dark"] .page-header-breadcrumb {
+    background-color: transparent !important;
+}
+
+/* Nav tabs and pills in dark mode */
+[data-theme-mode="dark"] .nav-tabs .nav-link,
+[data-theme-mode="dark"] .nav-pills .nav-link {
+    color: var(--default-text-color, #e0e0e0) !important;
+}
+
+[data-theme-mode="dark"] .nav-tabs {
+    border-color: var(--default-border, #3a3d52) !important;
+}
+
+/* Badges transparent variants */
+[data-theme-mode="dark"] .bg-danger-transparent {
+    background-color: rgba(220, 53, 69, 0.15) !important;
+    color: #ff6b81 !important;
+}
+
+[data-theme-mode="dark"] .bg-success-transparent {
+    background-color: rgba(25, 135, 84, 0.15) !important;
+    color: #4ecca3 !important;
+}
+
+[data-theme-mode="dark"] .bg-primary-transparent {
+    background-color: rgba(99, 91, 255, 0.15) !important;
+}
+
+[data-theme-mode="dark"] .bg-warning-transparent {
+    background-color: rgba(255, 193, 7, 0.15) !important;
+}
+
+/* Modal */
+[data-theme-mode="dark"] .modal-content {
+    background-color: var(--custom-white, #212332) !important;
+    border-color: var(--default-border, #3a3d52) !important;
+    color: var(--default-text-color, #e0e0e0) !important;
+}
+
+[data-theme-mode="dark"] .modal-header,
+[data-theme-mode="dark"] .modal-footer {
+    border-color: var(--default-border, #3a3d52) !important;
+}
+
+/* =====================================================
+   Hide storefront elements that bleed into admin pages
+   ===================================================== */
+
+/* The storefront mobile bottom toolbar is position:fixed and shows up
+   on admin pages too — hide it completely on admin layout pages */
+[data-nav-layout="vertical"] .tf-toolbar-bottom {
+    display: none !important;
+}

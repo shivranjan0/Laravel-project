@@ -5,14 +5,14 @@ self.__BUILD_MANIFEST = {
   "/_error": [
     "static/chunks/pages/_error.js"
   ],
-  "/collection": [
-    "static/chunks/pages/collection.js"
+  "/admin": [
+    "static/chunks/pages/admin.js"
   ],
-  "/product": [
-    "static/chunks/pages/product.js"
+  "/admin/add-product": [
+    "static/chunks/pages/admin/add-product.js"
   ],
-  "/wishlist": [
-    "static/chunks/pages/wishlist.js"
+  "/admin/full-calendar": [
+    "static/chunks/pages/admin/full-calendar.js"
   ],
   "__rewrites": {
     "afterFiles": [],
@@ -24,6 +24,15 @@ self.__BUILD_MANIFEST = {
     "/_app",
     "/_error",
     "/about",
+    "/admin",
+    "/admin/add-product",
+    "/admin/blog",
+    "/admin/chat",
+    "/admin/faqs",
+    "/admin/full-calendar",
+    "/admin/mail",
+    "/admin/reviews",
+    "/admin/to-do-list",
     "/blog",
     "/blog-detail",
     "/collection",

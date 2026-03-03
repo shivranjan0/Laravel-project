@@ -19,13 +19,13 @@ globalThis.__BUILD_MANIFEST = {
       "static/chunks/node_modules_next_dist_shared_lib_1e3a4f5d._.js",
       "static/chunks/node_modules_next_dist_client_881bc7f7._.js",
       "static/chunks/node_modules_next_dist_75b597d7._.js",
-      "static/chunks/node_modules_next_eda16823._.js",
+      "static/chunks/node_modules_next_5eeb8d33._.js",
       "static/chunks/node_modules_react-dom_4411d9bd._.js",
       "static/chunks/node_modules_swiper_7cb71f9c._.js",
       "static/chunks/node_modules_4d13c254._.js",
-      "static/chunks/_0d373f2c._.css",
+      "static/chunks/_100c3c8d._.css",
       "static/chunks/src_pages__app_2da965e7._.js",
-      "static/chunks/turbopack-src_pages__app_9419ba2d._.js"
+      "static/chunks/turbopack-src_pages__app_d3e2c567._.js"
     ],
     "/_error": [
       "static/chunks/node_modules_next_dist_compiled_8ca6b690._.js",
@@ -40,41 +40,41 @@ globalThis.__BUILD_MANIFEST = {
       "static/chunks/src_pages__error_2da965e7._.js",
       "static/chunks/turbopack-src_pages__error_91df4ec0._.js"
     ],
-    "/collection": [
+    "/admin": [
+      "static/chunks/[root-of-the-server]__422947da._.js",
       "static/chunks/node_modules_next_dist_compiled_8ca6b690._.js",
-      "static/chunks/node_modules_next_dist_shared_lib_15080aa3._.js",
+      "static/chunks/node_modules_next_dist_shared_lib_8066b03d._.js",
       "static/chunks/node_modules_next_dist_client_881bc7f7._.js",
       "static/chunks/node_modules_next_dist_75b597d7._.js",
-      "static/chunks/node_modules_next_link_207af988.js",
+      "static/chunks/node_modules_next_56111ca0._.js",
       "static/chunks/node_modules_react-dom_4411d9bd._.js",
-      "static/chunks/node_modules_830ad476._.js",
-      "static/chunks/[root-of-the-server]__cd5b1422._.js",
-      "static/chunks/src_pages_collection_2da965e7._.js",
-      "static/chunks/turbopack-src_pages_collection_c6f70906._.js"
+      "static/chunks/node_modules_f1be3ba2._.js",
+      "static/chunks/src_pages_admin_index_jsx_2da965e7._.js",
+      "static/chunks/turbopack-src_pages_admin_index_jsx_2173a731._.js"
     ],
-    "/product": [
-      "static/chunks/[root-of-the-server]__bee757da._.js",
+    "/admin/add-product": [
+      "static/chunks/[root-of-the-server]__7d73b27b._.js",
       "static/chunks/node_modules_next_dist_compiled_8ca6b690._.js",
-      "static/chunks/node_modules_next_dist_shared_lib_8bac8163._.js",
-      "static/chunks/node_modules_next_dist_client_5a8a528e._.js",
+      "static/chunks/node_modules_next_dist_shared_lib_8066b03d._.js",
+      "static/chunks/node_modules_next_dist_client_881bc7f7._.js",
       "static/chunks/node_modules_next_dist_75b597d7._.js",
+      "static/chunks/node_modules_next_56111ca0._.js",
       "static/chunks/node_modules_react-dom_4411d9bd._.js",
-      "static/chunks/node_modules_swiper_3fd11479._.js",
-      "static/chunks/node_modules_c27b57ec._.js",
-      "static/chunks/node_modules_swiper_3aa8aed6._.css",
-      "static/chunks/src_pages_product_2da965e7._.js",
-      "static/chunks/turbopack-src_pages_product_77ac2452._.js"
+      "static/chunks/node_modules_f1be3ba2._.js",
+      "static/chunks/src_pages_admin_add-product_jsx_2da965e7._.js",
+      "static/chunks/turbopack-src_pages_admin_add-product_jsx_0660a047._.js"
     ],
-    "/wishlist": [
+    "/admin/full-calendar": [
+      "static/chunks/[root-of-the-server]__c0931b8c._.js",
       "static/chunks/node_modules_next_dist_compiled_8ca6b690._.js",
-      "static/chunks/node_modules_next_dist_shared_lib_8bac8163._.js",
-      "static/chunks/node_modules_next_dist_client_5a8a528e._.js",
+      "static/chunks/node_modules_next_dist_shared_lib_8066b03d._.js",
+      "static/chunks/node_modules_next_dist_client_881bc7f7._.js",
       "static/chunks/node_modules_next_dist_75b597d7._.js",
+      "static/chunks/node_modules_next_56111ca0._.js",
       "static/chunks/node_modules_react-dom_4411d9bd._.js",
-      "static/chunks/node_modules_542770e5._.js",
-      "static/chunks/[root-of-the-server]__e768fbfb._.js",
-      "static/chunks/src_pages_wishlist_2da965e7._.js",
-      "static/chunks/turbopack-src_pages_wishlist_e3933b52._.js"
+      "static/chunks/node_modules_f1be3ba2._.js",
+      "static/chunks/src_pages_admin_full-calendar_jsx_2da965e7._.js",
+      "static/chunks/turbopack-src_pages_admin_full-calendar_jsx_ee6b242e._.js"
     ]
   },
   "devFiles": [],
